@@ -2,7 +2,8 @@
 node_modules/
 
 #tests example
-e2e/
+1-getting-started/
+2-advanced-examples
 
 #fixtures example
 example.json
