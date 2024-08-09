@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+#tests example
+e2e/
+
+#fixtures example
+example.json
+
