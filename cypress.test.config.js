@@ -6,9 +6,11 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     env: {
-      USER_NAME: 'standard_user',
+      // BASE_URL: 'https://www.saucedemo.com/',
+      USER_NAME: 'problem_user',
       USER_PASSWORD: 'secret_sauce',
     },
+
     defaultCommandTimeout: 5000,
     // "fixturesFolder": "cypress/fixtures",
     specPattern: '**/*.cy.js',

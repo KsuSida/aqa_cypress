@@ -5,6 +5,7 @@ export default class BasePage {
     this.baseURL = 'https://www.saucedemo.com/';
   }
   open(url) {
-    cy.visit(`${this.baseURL}${url}`);
+    // cy.visit(`${this.baseURL}${url}`);
+    cy.visit(`/${url}`);
   }
 }
