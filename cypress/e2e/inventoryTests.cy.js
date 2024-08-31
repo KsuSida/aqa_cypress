@@ -8,8 +8,10 @@ describe('Inventory tests', () => {
   beforeEach(() => {
     LoginPage.open();
     LoginPage.login(
-      testData.userNames.correctUserName,
-      testData.passwords.correctPassword,
+      // testData.userNames.correctUserName,
+      // testData.passwords.correctPassword,
+      Cypress.env('USER_NAME'),
+      Cypress.env('USER_PASSWORD'),
     );
   });
   it('Check: Elements are visible', () => {
