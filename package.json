@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec 'cypress/e2e/inventoryTests.cy.js' --browser chrome --port 8081"
+    "test": "npx cypress run --spec 'cypress/e2e/inventoryTests.cy.js' --browser chrome"
   },
   "author": "",
   "license": "ISC",
