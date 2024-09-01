@@ -1,5 +1,9 @@
 name: Cypress tests
-on: push
+on:
+  push:
+    branches: [main, master, lastHW]
+  pull_request:
+    branches: [main, master, lastHW]
 jobs:
   chrome:
     runs-on: ubuntu-22.04
