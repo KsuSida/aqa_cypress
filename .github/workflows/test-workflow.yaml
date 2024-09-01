@@ -1,4 +1,4 @@
-name: Cypress tests run
+name: Cypress tests
 on:
   push:
     branches: [main, master]
