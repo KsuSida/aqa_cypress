@@ -1,22 +1,12 @@
 name: Cypress tests
-on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
+on: push
 jobs:
-  cypress-run:
-    name: Cypress run
+  chrome:
     runs-on: ubuntu-22.04
+    name: E2E on Chrome
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: cypress-io/github-action@v6
         with:
-          node-version: 18
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Cypress tests
-        uses: cypress-io/github-action@v6
-        with:
+          browser: chrome
           spec: cypress/e2e/inventoryTests.cy.js
